@@ -107,7 +107,7 @@ Function UpdatePackage {
         Write-Host "Update package"
         CheckPackageSetting('AppSetting.json')
         $packageName = $applicationName + "-" + $packageVersion
-        $requestUrl = "https://management.azure.com/subscriptions/${subscriptionId}/resourceGroups/${resourceGroupName}/providers/Microsoft.TestBase/testBaseAccounts/${testBaseAccountName}/packages/${packageName}?api-version=2022-05-01"
+        $requestUrl = "https://management.azure.com/subscriptions/${subscriptionId}/resourceGroups/${resourceGroupName}/providers/Microsoft.TestBase/testBaseAccounts/${testBaseAccountName}/packages/${packageName}?api-version=2023-05-15-preview"
         $packageSetting = Get-Content 'AppSetting.json' | ConvertFrom-Json
         $packageSetting.properties[0].blobPath = $currUploadUrl.Substring(0, $currUploadUrl.IndexOf("?"))
         

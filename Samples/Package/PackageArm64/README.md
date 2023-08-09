@@ -16,7 +16,7 @@ Get Download URL->Upload package zip->Create/Updata package
 
 ## REST API
 ### TestBase - Get Available OSVersions For SecurityUpdate
-Gets an available OS to run a package under a Test Base Account. set the value  to request body [properties.targetOSList] for create/update package.
+Gets an available OS to run a package under a Test Base Account. Set the value to request body [properties.targetOSList] for create/update package.
 #### HTTP Request
 ```
 GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.TestBase/testBaseAccounts/{testBaseAccountName}/availableOSs?api-version=2023-05-15-preview&osUpdateType=SecurityUpdate
@@ -39,7 +39,7 @@ In the request URL, provide the following query parameters with values.
 ##### Request
 
 ```http
-GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs?api-version=2023-01-01-preview&osUpdateType=SecurityUpdate
+GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs?api-version=2023-05-15-preview&osUpdateType=SecurityUpdate
 ```
 
 ##### Response
@@ -48,7 +48,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
 {
   "value": [
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2022---Server-Core_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2022---Server-Core_WindowsUpdate",
       "name": "Windows-Server-2022---Server-Core_WindowsUpdate",
       "properties": {
         "osId": "Windows Server 2022 - Server Core",
@@ -61,7 +61,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2022_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2022_WindowsUpdate",
       "name": "Windows-Server-2022_WindowsUpdate",
       "properties": {
         "osId": "Windows Server 2022",
@@ -74,7 +74,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2019---Server-Core_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2019---Server-Core_WindowsUpdate",
       "name": "Windows-Server-2019---Server-Core_WindowsUpdate",
       "properties": {
         "osId": "Windows Server 2019 - Server Core",
@@ -87,7 +87,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2019_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2019_WindowsUpdate",
       "name": "Windows-Server-2019_WindowsUpdate",
       "properties": {
         "osId": "Windows Server 2019",
@@ -100,7 +100,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2016---Server-Core_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2016---Server-Core_WindowsUpdate",
       "name": "Windows-Server-2016---Server-Core_WindowsUpdate",
       "properties": {
         "osId": "Windows Server 2016 - Server Core",
@@ -113,7 +113,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2016_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-Server-2016_WindowsUpdate",
       "name": "Windows-Server-2016_WindowsUpdate",
       "properties": {
         "osId": "Windows Server 2016",
@@ -126,7 +126,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-22H2_WindowsUpdate_96d208e0-9af7-4e41-ac77-00d182b46fc2",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-22H2_WindowsUpdate_96d208e0-9af7-4e41-ac77-00d182b46fc2",
       "name": "Windows-11-22H2_WindowsUpdate_96d208e0-9af7-4e41-ac77-00d182b46fc2",
       "properties": {
         "osId": "Windows 11 22H2_96d208e0-9af7-4e41-ac77-00d182b46fc2",
@@ -139,7 +139,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-22H2_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-22H2_WindowsUpdate",
       "name": "Windows-11-22H2_WindowsUpdate",
       "properties": {
         "osId": "Windows 11 22H2",
@@ -152,7 +152,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-21H2_WindowsUpdate_28b37b48-9add-42c3-b32e-58bea1cce22d",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-21H2_WindowsUpdate_28b37b48-9add-42c3-b32e-58bea1cce22d",
       "name": "Windows-11-21H2_WindowsUpdate_28b37b48-9add-42c3-b32e-58bea1cce22d",
       "properties": {
         "osId": "Windows 11 21H2_28b37b48-9add-42c3-b32e-58bea1cce22d",
@@ -165,7 +165,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-21H2_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-11-21H2_WindowsUpdate",
       "name": "Windows-11-21H2_WindowsUpdate",
       "properties": {
         "osId": "Windows 11 21H2",
@@ -178,7 +178,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-10-22H2_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-10-22H2_WindowsUpdate",
       "name": "Windows-10-22H2_WindowsUpdate",
       "properties": {
         "osId": "Windows 10 22H2",
@@ -191,7 +191,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-10-21H2_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/Windows-10-21H2_WindowsUpdate",
       "name": "Windows-10-21H2_WindowsUpdate",
       "properties": {
         "osId": "Windows 10 21H2",
@@ -204,7 +204,7 @@ GET https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
       }
     },
     {
-      "id": "/subscriptions/476f61a4-952c-422a-b4db-568a828f35df/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/All-Future-OS-Updates_WindowsUpdate",
+      "id": "/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/availableOSs/All-Future-OS-Updates_WindowsUpdate",
       "name": "All-Future-OS-Updates_WindowsUpdate",
       "properties": {
         "osId": "All Future OS Updates",
@@ -463,7 +463,7 @@ PUT https://management.azure.com/subscriptions/subscription-id/resourceGroups/co
 Update an existing Test Base Package.
 #### HTTP Request
 ```
-PATCH https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.TestBase/testBaseAccounts/{testBaseAccountName}/packages/{packageName}?api-version=2022-04-01-preview
+PATCH https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.TestBase/testBaseAccounts/{testBaseAccountName}/packages/{packageName}?api-version=2023-05-15-preview
 ```
 #### Request parameters
 In the request URL, provide the following query parameters with values.
@@ -498,7 +498,7 @@ In the request URL, provide the following query parameters with values.
 ##### Request
 
 ```http
-PATCH https://management.azure.com/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/packages/contoso-package2?api-version=2022-04-01-preview
+PATCH https://management.azure.com/subscriptions/subscription-id/resourceGroups/contoso-rg1/providers/Microsoft.TestBase/testBaseAccounts/contoso-testBaseAccount1/packages/contoso-package2?api-version=2023-05-15-preview
 
 {
   "location": "global",
